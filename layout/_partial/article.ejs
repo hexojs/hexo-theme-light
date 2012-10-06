@@ -1,9 +1,11 @@
 <article class="<%= item.layout %>">
   <header>
     <div class="icon <%= item.layout %>"></div>
-    <time datetime="<%= item.date.toDate().toISOString() %>"><%= item.date.format(config.date_format) %></time>
+    <% if (item.layout != 'page'){ %>
+      <time datetime="<%= item.date.toDate().toISOString() %>"><%= item.date.format(config.date_format) %></time>
+    <% } %>
     <% if (item.title){ %>
-    <h1 class="title"><a href="<%- item.permalink %>"><%= item.title %></a></h1>
+      <h1 class="title"><a href="<%- item.permalink %>"><%= item.title %></a></h1>
     <% } %>
   </header>
   <div class="entry">
