@@ -10,7 +10,7 @@ widgets:
 excerpt_link: Read More
 
 twitter:
-  username: tommy351
+  username:
   show_replies: false
   tweet_count: 5
 
