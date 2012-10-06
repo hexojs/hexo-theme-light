@@ -1,24 +1,47 @@
 <article class="<%= item.layout %>">
-  <header>
-    <div class="icon <%= item.layout %>"></div>
-    <% if (item.layout != 'page'){ %>
-      <time datetime="<%= item.date.toDate().toISOString() %>"><%= item.date.format(config.date_format) %></time>
-    <% } %>
-    <% if (item.title){ %>
-      <h1 class="title"><a href="<%- item.permalink %>"><%= item.title %></a></h1>
-    <% } %>
-  </header>
-  <div class="entry">
-    <% if (item.excerpt && index){ %>
-      <%- item.excerpt %>
-    <% } else { %>
-      <%- item.content %>
-    <% } %>
+  <% if (item.layout == 'photo'){ %>
+    <div class="gallery">
+      <% item.photos.forEach(function(photo){ %>
+        <img src="<%- photo %>">
+      <% }) %>
+    </div>
+  <% } %>
+  <div class="post-content">
+    <header>
+      <div class="icon"></div>
+      <% if (item.layout != 'page'){ %>
+        <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- item.permalink %>"><%= item.date.format(config.date_format) %></a></time>
+      <% } %>
+      <% if (item.layout == 'link'){ %>
+        <% if (item.title){ %>
+          <h1 class="title"><a href="<%- item.link %>" target="_blank"><%= item.title %></a></h1>
+        <% } else { %>
+          <h1 class="title"><a href="<%- item.link %>" target="_blank"><%= item.link %></a></h1>
+        <% } %>
+      <% } else { %>
+        <% if (item.title){ %>
+          <% if (index){ %>
+            <h1 class="title"><a href="<%- item.permalink %>"><%= item.title %></a></h1>
+          <% } else { %>
+            <h1 class="title"><%= item.title %></h1>
+          <% } %>
+        <% } %>
+      <% } %>
+    </header>
+    <div class="entry">
+      <% if (item.excerpt && index){ %>
+        <%- item.excerpt %>
+      <% } else { %>
+        <%- item.content %>
+      <% } %>
+    </div>
     <footer>
       <% if (index){ %>
-        <div class="alignleft">
-          <a href="<%- item.permalink %>" class="more-link"><%= theme.excerpt_link %></a>
-        </div>
+        <% if (item.excerpt){ %>
+          <div class="alignleft">
+            <a href="<%- item.permalink %>" class="more-link"><%= theme.excerpt_link %></a>
+          </div>
+        <% } %>
         <div class="alignright">
           <a href="<%- config.url %><%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
         </div>

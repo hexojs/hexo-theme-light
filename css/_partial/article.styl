@@ -2,15 +2,57 @@ icon-size = 32px
 icon-gap = 25px
 
 article
-  padding 20px 20px 15px (icon-size + icon-gap + 20)
-  margin-bottom 50px
-  background #fff
   box-shadow 1px 2px 3px #ddd
-  position relative
+  background #fff
   &.page
     padding-left 20px
     .icon
       display none
+
+  &.post
+    .icon
+      &:before
+        content '\f016'
+        top 9px
+        left 11px
+
+  &.link
+    .icon
+      &:before
+        content '\f0c1'
+        top 9px
+        left 10px
+
+  &.photo
+    .icon
+      &:before
+        content '\f030'
+        top 9px
+        left 9px
+
+  &.link
+    .title
+      a
+        &:after
+          content '\f08e'
+          color color-meta
+          font 12px font-icon
+          padding-left 10px
+
+  .post-content
+    padding 20px 20px 15px (icon-size + icon-gap + 20)
+    margin-bottom 50px
+    position relative 
+
+  .gallery
+    overflow hidden
+    img
+      min-width 100%
+      max-width 100%
+      height auto
+      display none
+      &:first-of-type
+        display block
 
   header
     .icon
@@ -28,11 +70,7 @@ article
         font 1.2em/1 font-icon
         width 32px
 
-      &.post
-        &:before
-          content '\f016'
-          top 9px
-          left 11px
+      
 
     time
       color color-meta
@@ -119,53 +157,53 @@ article
         height 100%
         margin-top 0
 
-    footer
-      margin-top 15px
-      padding-top 15px
-      border-top 1px solid color-border
+  footer
+    margin-top 15px
+    padding-top 15px
+    border-top 1px solid color-border
+    color color-meta
+    font-size 0.9em
+    line-height 16px
+    position relative
+    min-height 16px
+    a
       color color-meta
-      font-size 0.9em
-      line-height 16px
+      &:hover
+        color color-link
+        text-decoration none
+      &:before
+        font 1.1em font-icon
+        padding-right 10px
+        vertical-align middle
+
+      &.more-link
+        &:before
+          content '\f054'
+
+      &.comment-link
+        &:before
+          content '\f075'
+
+    .categories, .tags
       position relative
-      min-height 16px
-      a
-        color color-meta
-        &:hover
-          color color-link
-          text-decoration none
-        &:before
-          font 1.1em font-icon
-          padding-right 10px
-          vertical-align middle
+      padding-left 25px
+      &:before
+        position absolute
+        font 1.1em font-icon
 
-        &.more-link
-          &:before
-            content '\f054'
+    .categories
+      &:before
+        content '\f07b'
+        top 2px
+        left 1px
 
-        &.comment-link
-          &:before
-            content '\f075'
+    .tags
+      &:before
+        content '\f02b'
+        top 3px
+        left 2px
 
-      .categories, .tags
-        position relative
-        padding-left 25px
-        &:before
-          position absolute
-          font 1.1em font-icon
-
-      .categories
-        &:before
-          content '\f07b'
-          top 2px
-          left 1px
-
-      .tags
-        &:before
-          content '\f02b'
-          top 3px
-          left 2px
-
-      .addthis
-        margin-top 10px
-        iframe
-          margin-top 0
+    .addthis
+      margin-top 15px
+      iframe
+        margin-top 0
