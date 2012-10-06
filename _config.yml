@@ -13,3 +13,11 @@ twitter:
   username: tommy351
   show_replies: false
   tweet_count: 5
+
+addthis:
+  enable: true
+  pubid:
+  facebook: true
+  twitter: true
+  google: true
+  pinterest: true

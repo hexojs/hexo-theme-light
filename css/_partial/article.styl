@@ -120,7 +120,9 @@ article
       border-top 1px solid color-border
       color color-meta
       font-size 0.9em
-      line-height 1.6
+      line-height 16px
+      position relative
+      min-height 16px
       a
         color color-meta
         &:hover
@@ -149,11 +151,16 @@ article
       .categories
         &:before
           content '\f07b'
-          top 3px
+          top 2px
           left 1px
 
       .tags
         &:before
           content '\f02b'
-          top 4px
+          top 3px
           left 2px
+
+      .addthis
+        margin-top 10px
+        iframe
+          margin-top 0
