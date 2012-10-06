@@ -1,0 +1,159 @@
+icon-size = 32px
+icon-gap = 25px
+
+article
+  padding 20px 20px 15px (icon-size + icon-gap + 20)
+  margin-bottom 50px
+  background #fff
+  box-shadow 1px 2px 3px #ddd
+  position relative
+  header
+    .icon
+      width icon-size
+      height icon-size
+      background color-link
+      border-radius 50%
+      margin-right icon-gap
+      position absolute
+      top 20px
+      left 20px
+      color #fff
+      &:before
+        position absolute
+        font 1.2em/1 font-icon
+        width 32px
+
+      &.post
+        &:before
+          content '\f016'
+          top 9px
+          left 11px
+
+    time
+      color color-meta
+      font-size 0.9em
+      margin-bottom 5px
+      display block
+      line-height 1
+
+    .title
+      font-weight normal
+      a
+        color color-font
+        &:hover
+          color color-link
+          text-decoration none
+
+  .entry
+    text-align justify
+    p, blockquote, ul, ol, dl, table, iframe, .video-container
+      margin-top 15px
+
+    blockquote
+      border-top 1px solid color-border
+      border-bottom 1px solid color-border
+      font-style italic
+      padding 15px 30px 30px
+      text-align center
+      color color-meta
+
+    code, pre
+      font-family font-mono
+
+    code
+      white-space nowrap
+      background #eee
+      color #666
+      padding 0 5px
+      margin 0 2px
+      font-size 0.9em
+      border 1px solid color-border
+      border-radius 3px
+
+    pre
+      code
+        background none
+        padding 0
+        margin 0
+        border none
+        border-radius 0
+
+    ul, ol, dl
+      margin-left 20px
+      ul, ol, dl
+        margin-top 0
+
+    h1, h2, h3, h4, h5, h6
+      font-weight normal
+      border-bottom 1px solid color-border
+      padding-bottom 10px
+      margin-top 20px
+
+    p, ul, ol, dl
+      line-height 1.6
+
+    img, video
+      max-width 100%
+      height auto
+      border none
+
+    iframe
+      border none
+
+    .video-container
+      position relative
+      padding-bottom 56.25%
+      padding-top 30px
+      height 0
+      overflow hidden
+      iframe, object, embed
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        margin-top 0
+
+    footer
+      margin-top 15px
+      padding-top 15px
+      border-top 1px solid color-border
+      color color-meta
+      font-size 0.9em
+      line-height 1.6
+      a
+        color color-meta
+        &:hover
+          color color-link
+          text-decoration none
+        &:before
+          font 1.1em font-icon
+          padding-right 10px
+          vertical-align middle
+
+        &.more-link
+          &:before
+            content '\f054'
+
+        &.comment-link
+          &:before
+            content '\f075'
+
+      .categories, .tags
+        position relative
+        padding-left 25px
+        &:before
+          position absolute
+          font 1.1em font-icon
+
+      .categories
+        &:before
+          content '\f07b'
+          top 3px
+          left 1px
+
+      .tags
+        &:before
+          content '\f02b'
+          top 4px
+          left 2px
