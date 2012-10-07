@@ -10,7 +10,7 @@
     <header>
       <div class="icon"></div>
       <% if (item.layout != 'page'){ %>
-        <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- item.permalink %>"><%= item.date.format(config.date_format) %></a></time>
+        <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.permalink %>"><%= item.date.format(config.date_format) %></a></time>
       <% } %>
       <% if (item.layout == 'link'){ %>
         <% if (item.title){ %>
@@ -21,7 +21,7 @@
       <% } else { %>
         <% if (item.title){ %>
           <% if (index){ %>
-            <h1 class="title"><a href="<%- item.permalink %>"><%= item.title %></a></h1>
+            <h1 class="title"><a href="<%- config.root %><%- item.permalink %>"><%= item.title %></a></h1>
           <% } else { %>
             <h1 class="title"><%= item.title %></h1>
           <% } %>
@@ -39,7 +39,7 @@
       <% if (index){ %>
         <% if (item.excerpt){ %>
           <div class="alignleft">
-            <a href="<%- item.permalink %>" class="more-link"><%= theme.excerpt_link %></a>
+            <a href="<%- config.root %><%- item.permalink %>#more" class="more-link"><%= theme.excerpt_link %></a>
           </div>
         <% } %>
         <div class="alignright">
@@ -50,7 +50,7 @@
           <%
           var cats = [];
           item.categories.forEach(function(cat){
-            cats.push('<a href="' + cat.permalink + '">' + cat.name + '</a>');
+            cats.push('<a href="' + config.root + cat.permalink + '">' + cat.name + '</a>');
           });
           %>
           <div class="categories">
@@ -61,7 +61,7 @@
           <%
           var tags = [];
           item.tags.forEach(function(tag){
-            tags.push('<a href="' + tag.permalink + '">' + tag.name + '</a>');
+            tags.push('<a href="' + config.root + tag.permalink + '">' + tag.name + '</a>');
           });
           %>
           <div class="tags">

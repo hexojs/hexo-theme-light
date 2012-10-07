@@ -3,7 +3,7 @@
   <ul class="entry">
   <% for (var i in site.tags){ %>
     <% var item = site.tags[i]; %>
-    <li><a href="<%- item.permalink %>"><%= i %></a><small><%= item.length %></small></li>
+    <li><a href="<%- config.root %><%- item.permalink %>"><%= i %></a><small><%= item.length %></small></li>
   <% } %>
   </ul>
 </div>
