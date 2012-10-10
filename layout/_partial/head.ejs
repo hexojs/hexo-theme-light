@@ -4,7 +4,11 @@
   <meta charset="utf-8">
   <title><% if (page.title){ %><%= page.title %> | <% } %><%= config.title %></title>
   <% if (config.author){ %><meta name="author" content="<%= config.author %>"><% } %>
-  <% if (config.description){ %><meta name="description" content="<%= config.description %>"><% } %>
+  <% if (page.description){ %>
+  <meta name="description" content="<%= page.description %>">
+  <% } else if (config.description){ %>
+  <meta name="description" content="<%= config.description %>">
+  <% } %>
   <% if (page.keywords){ %><meta name="keywords" content="<%= page.keywords %>"><% } %>
   <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
