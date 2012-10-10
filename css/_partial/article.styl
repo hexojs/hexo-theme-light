@@ -13,24 +13,17 @@ article
     .icon
       &:before
         content '\f016'
-        top 9px
-        left 11px
-
-  &.link
-    .icon
-      &:before
-        content '\f0c1'
-        top 9px
-        left 10px
 
   &.photo
     .icon
       &:before
         content '\f030'
-        top 9px
-        left 9px
 
   &.link
+    .icon
+      &:before
+        content '\f0c1'
+
     .title
       a
         &:after
@@ -58,23 +51,22 @@ article
     .icon
       width icon-size
       height icon-size
-      background color-link
-      border-radius 50%
       margin-right icon-gap
       position absolute
       top 20px
       left 20px
-      color #fff
+      color color-link
       &:before
         position absolute
-        font 1.2em/1 font-icon
+        font 32px font-icon    
+        top 0
+        left 0 
         width 32px
-
-      
+        text-align center
 
     time
       color color-meta
-      font-size 0.9em
+      font 0.9em font-title
       margin-bottom 5px
       display block
       line-height 1
