@@ -1,8 +1,6 @@
 <% if (config.disqus_shortname){ %>
 <script type="text/javascript">
-var disqus_shortname = '<%= config.disqus_shortname %>',
-  disqus_identifier = '<%- config.url %><% if (page.permalink){ %>/<%- page.permalink %><% } %>',
-  disqus_url = disqus_identifier;
+var disqus_shortname = '<%= config.disqus_shortname %>';
 
 <% if (page.comments){ %>
 var disqus_script = 'embed.js';
