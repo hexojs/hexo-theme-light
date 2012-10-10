@@ -55,7 +55,6 @@
         loading = true;
 
         play($this, photoset.eq(next), function(){
-          console.log('!');
           photoset.eq(current).animate({opacity: 0}, 500);
           loading = false;
           current = next;
