@@ -21,3 +21,5 @@ addthis:
   twitter: true
   google: true
   pinterest: true
+
+fancybox: true
