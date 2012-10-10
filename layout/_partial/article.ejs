@@ -1,9 +1,15 @@
 <article class="<%= item.layout %>">
-  <% if (item.layout == 'photo'){ %>
+  <% if (item.layout == 'photo' && item.photos && item.photos.length){ %>
     <div class="gallery">
-      <% item.photos.forEach(function(photo){ %>
-        <img src="<%- photo %>">
-      <% }) %>
+      <div class="photoset">
+        <% item.photos.forEach(function(photo){ %>
+          <img src="<%- photo %>">
+        <% }); %>
+      </div>
+      <div class="control">
+        <a class="prev"></a>
+        <a class="next"></a>
+      </div>
     </div>
   <% } %>
   <div class="post-content">
