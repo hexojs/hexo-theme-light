@@ -35,7 +35,9 @@ article
   .post-content
     padding 20px 20px 15px (icon-size + icon-gap + 20)
     margin-bottom 50px
-    position relative 
+    position relative
+    @media screen and (max-width: 600px)
+      padding-left 20px
 
   .gallery
     overflow hidden
@@ -94,6 +96,8 @@ article
       top 20px
       left 20px
       color color-link
+      @media screen and (max-width: 600px)
+        display none
       &:before
         position absolute
         font 32px font-icon    

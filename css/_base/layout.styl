@@ -8,6 +8,10 @@ body
   font-family font-default
   font-size 14px
   text-shadow 0 0 1px transparent
+  @media screen and (max-width: 1260px)
+    margin 0 30px
+  @media screen and (max-width: 600px)
+    font-size 13px
 
 h1, h2, h3, h4, h5, h6
   font-family font-title
@@ -39,6 +43,20 @@ a
 .inner
   width page-width
   margin 0 auto
+  @media screen and (max-width: 1260px)
+    width 100%
 
 #main-col
   width 900px
+  @media screen and (max-width: 1260px)
+    width 100%
+    margin-right -300px
+  @media screen and (max-width: 900px)
+    margin-right 0
+    float none
+
+#wrapper
+  @media screen and (max-width: 1260px)
+    margin-right 300px
+  @media screen and (max-width: 900px)
+    margin-right 0
