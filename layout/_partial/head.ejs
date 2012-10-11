@@ -7,9 +7,9 @@
   <% if (page.description){ %>
   <meta name="description" content="<%= page.description %>">
   <% } else if (page.excerpt){ %>
-  <meta name="description" content="<%= page.excerpt.replace(/<[^>]*>/g, '') %>">
+  <meta name="description" content="<%= page.excerpt.replace(/<[^>]*>/g, '').replace(/\n/g, '') %>">
   <% } else if (page.content){ %>
-  <meta name="description" content="<%= page.content.replace(/<[^>]*>/g, '').substring(0, 150) %>">
+  <meta name="description" content="<%= page.content.replace(/<[^>]*>/g, '').replace(/\n/g, '').substring(0, 150) %>">
   <% } else if (config.description){ %>
   <meta name="description" content="<%= config.description %>">
   <% } %>
