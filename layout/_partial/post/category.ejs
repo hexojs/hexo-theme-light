@@ -1,0 +1,11 @@
+<% if (item.categories){ %>
+  <%
+  var cats = [];
+  item.categories.forEach(function(cat){
+    cats.push('<a href="' + config.root + cat.permalink + '">' + cat.name + '</a>');
+  });
+  %>
+  <div class="categories">
+    <%- cats.join(', ') %>
+  </div>
+<% } %>
