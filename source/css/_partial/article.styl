@@ -123,16 +123,13 @@ article
 
   .entry
     text-align justify
-    p, blockquote, ul, ol, dl, table, iframe, .video-container
+    p, blockquote, ul, ol, dl, table, iframe, h3, h4, h5, h6, .video-container
       margin-top 15px
 
     blockquote
-      border-top 1px solid color-border
-      border-bottom 1px solid color-border
+      padding 0 30px
+      font-family font-serif
       font-style italic
-      padding 15px 30px 30px
-      text-align center
-      color color-meta
 
     code, pre
       font-family font-mono
@@ -160,11 +157,14 @@ article
       ul, ol, dl
         margin-top 0
 
-    h1, h2, h3, h4, h5, h6
+    h1, h2
       font-weight normal
       border-bottom 1px solid color-border
       padding-bottom 10px
       margin-top 20px
+
+    h3, h4, h5, h6
+      font-weight normal
 
     p, ul, ol, dl
       line-height 1.6
