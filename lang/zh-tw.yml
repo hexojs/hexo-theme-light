@@ -1,0 +1,13 @@
+# layout/_partial/article.ejs
+# layout/_partial/comment.ejs
+Comments: 留言
+
+# layout/_widget/search.ejs
+Search: 搜尋
+
+# layout/_widget/tag.ejs
+Tags: 標籤
+
+# layout/pagination.ejs
+Prev: 上一頁
+Next: 下一頁
