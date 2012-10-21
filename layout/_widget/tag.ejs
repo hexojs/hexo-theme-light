@@ -3,7 +3,7 @@
   <h3 class="title">Tags</h3>
   <ul class="entry">
   <% site.tags.each(function(item){ %>
-    <li><a href="<%- config.root %><%- item.permalink %>"><%= i %></a><small><%= item.length %></small></li>
+    <li><a href="<%- config.root %><%- item.permalink %>"><%= item.name %></a><small><%= item.length %></small></li>
   <% }); %>
   </ul>
 </div>
