@@ -24,14 +24,6 @@ article
       &:before
         content '\f0c1'
 
-    .title
-      a
-        &:after
-          content '\f08e'
-          color color-meta
-          font 12px font-icon
-          padding-left 10px
-
   .post-content
     padding 20px 20px 15px (icon-size + icon-gap + 20)
     margin-bottom 50px
@@ -120,16 +112,38 @@ article
         &:hover
           color color-link
           text-decoration none
+        &.link
+          &:after
+            content '\f08e'
+            color color-meta
+            font 12px font-icon
+            padding-left 10px
 
   .entry
     text-align justify
+    line-height 1.6
     p, blockquote, ul, ol, dl, table, iframe, h3, h4, h5, h6, .video-container
       margin-top 15px
 
     blockquote
-      padding 0 30px
-      font-family font-serif
+      border-top 1px solid color-border
+      border-bottom 1px solid color-border
       font-style italic
+      font-family font-serif
+      font-size 1.2em
+      padding 0 30px 15px
+      text-align center
+      footer
+        border-top none
+        font-size 0.8em
+        line-height 1
+        margin 20px 0 0
+        padding-top 0
+        cite
+          &:before
+            content '—'
+            color #ccc
+            padding 0 0.5em
 
     code, pre
       font-family font-mono
@@ -165,9 +179,6 @@ article
 
     h3, h4, h5, h6
       font-weight normal
-
-    p, ul, ol, dl
-      line-height 1.6
 
     img, video
       max-width 100%
@@ -205,6 +216,15 @@ article
         width 100%
         height 100%
         margin-top 0
+
+    .pullquote
+      float right
+      border none
+      padding 0
+      margin 1em 0 0.5em 1.5em
+      text-align left
+      width 45%
+      font-size 1.5em
 
   footer
     margin-top 15px
