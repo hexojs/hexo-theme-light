@@ -1,36 +1,35 @@
 <article class="<%= item.layout %>">
-  <% if (item.layout == 'photo' && item.photos && item.photos.length){ %>
+  <% if (item.photos){ %>
     <div class="gallery">
       <div class="photoset">
-        <% item.photos.forEach(function(photo){ %>
-          <img src="<%- photo %>">
-        <% }); %>
+        <% if (item.photos.length){ %>
+          <% item.photos.forEach(function(photo){ %>
+            <img src="<%- photo %>">
+          <% }); %>
+        <% } else { %>
+          <img src="<%- item.photos %>">
+        <% } %>
       </div>
       <div class="control">
-        <a class="prev"></a>
-        <a class="next"></a>
+        <div class="prev"></div>
+        <div class="next"></div>
       </div>
     </div>
   <% } %>
   <div class="post-content">
     <header>
       <div class="icon"></div>
-      <% if (item.layout != 'page'){ %>
-        <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.permalink %>"><%= item.date.format(config.date_format) %></a></time>
-      <% } %>
-      <% if (item.layout == 'link'){ %>
+      <% if (item.link){ %>
         <% if (item.title){ %>
-          <h1 class="title"><a href="<%- item.link %>" target="_blank"><%= item.title %></a></h1>
+          <h1 class="title link"><a href="<%- item.link %>" target="_blank"><%= item.title %></a></h1>
         <% } else { %>
-          <h1 class="title"><a href="<%- item.link %>" target="_blank"><%= item.link %></a></h1>
+          <h1 class="title link"><a href="<%- item.link %>" target="_blank"><%= item.link %></a></h1>
         <% } %>
       <% } else { %>
-        <% if (item.title){ %>
-          <% if (index){ %>
-            <h1 class="title"><a href="<%- config.root %><%- item.permalink %>"><%= item.title %></a></h1>
-          <% } else { %>
-            <h1 class="title"><%= item.title %></h1>
-          <% } %>
+        <% if (index){ %>
+          <h1 class="title"><a href="<%- config.root %><%- item.permalink %>"><%= item.title %></a></h1>
+        <% } else { %>
+          <h1 class="title"><%= item.title %></h1>
         <% } %>
       <% } %>
     </header>
