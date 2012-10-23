@@ -1,3 +1,35 @@
+.entry
+  .gist
+    background #eee
+    border 1px solid color-border
+    margin-top 15px
+    padding 7px 15px
+    border-radius 2px
+    text-shadow 0 0 1px #fff
+    line-height 1.6
+    overflow auto
+    .gist-file
+      border none
+      font-family inherit
+      margin 0
+      .gist-data
+        background none
+        border-bottom none
+        pre
+          padding 0 !important
+          font-family font-mono
+
+      .gist-meta
+        background none
+        color color-meta
+        margin-top 5px
+        padding 0
+        text-shadow 0 0 1px #fff
+        a
+          color color-link
+          &:visited
+            color color-link
+
 figure.highlight
   background #eee
   border 1px solid color-border
@@ -7,6 +39,14 @@ figure.highlight
   text-shadow 0 0 1px #fff
   line-height 1.6
   overflow auto
+  figcaption
+    color color-meta
+    font-size 0.9em
+    margin-bottom 5px
+    text-shadow 0 0 1px #fff
+    a
+      float right
+
   table
     margin-top 0
     border-spacing 0
