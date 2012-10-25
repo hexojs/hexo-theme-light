@@ -9,10 +9,9 @@
   if (page.title) title += page.title;
   if (page.category) title += 'Category: ' + page.category;
   if (page.tag) title += 'Tag: ' + page.tag;
-  if (page.year){
-    title += 'Archive: ';
-    if (page.month) title += page.year + '/' + page.month;
-    else title += page.year;
+  if (page.archive){
+    title += 'Archives';
+    if (page.year) title += ': ' + page.year + (page.month ? '/' + page.month : '');
   }
   if (title) title += ' | ' + config.title;
   else title += config.title;
