@@ -4,6 +4,7 @@ menu:
 
 widgets: 
 - search
+- category
 - tag
 - twitter
 
