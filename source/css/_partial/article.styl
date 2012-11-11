@@ -24,6 +24,15 @@ article
       &:before
         content '\f0c1'
 
+    .title
+      a
+        &:after
+          content '\f08e'
+          color color-meta
+          font 12px font-icon
+          padding-left 10px
+          vertical-align super
+
   .post-content
     padding 20px 20px 15px (icon-size + icon-gap + 20)
     margin-bottom 50px
@@ -112,12 +121,6 @@ article
         &:hover
           color color-link
           text-decoration none
-        &.link
-          &:after
-            content '\f08e'
-            color color-meta
-            font 12px font-icon
-            padding-left 10px
 
   .entry
     text-align justify
