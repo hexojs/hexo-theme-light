@@ -10,6 +10,15 @@ Execute the following command and modify `theme` in `_config.yml` to `light`.
 git clone git://github.com/tommy351/hexo-theme-light.git themes/light
 ```
 
+## Update
+
+Execute the following command to update Light.
+
+```
+cd themes/light
+git pull
+```
+
 ## Config
 
 Default config:
