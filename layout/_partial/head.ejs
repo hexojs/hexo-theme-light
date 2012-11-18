@@ -22,9 +22,16 @@
   <meta name="description" content="<%= page.description %>">
   <% } else if (config.description){ %>
   <meta name="description" content="<%= config.description %>">
+  <% } else if (page.excerpt){ %>
+  <meta name="description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>">
+  <% } else if (page.content){ %>
+  <meta name="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
   <% } %>
   <% if (page.keywords){ %><meta name="keywords" content="<%= page.keywords %>"><% } %>
   <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+    
+  <% if (page.title){ %><meta property="og:title" content="<%= page.title %>"/><% } %>
+  <meta property="og:site_name" content="<%= config.title %>"/>
 
   <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
   <link rel="stylesheet" href="<%- config.root %>css/style.css" media="screen" type="text/css">
