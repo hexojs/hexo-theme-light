@@ -2,7 +2,7 @@
   <%
   var cats = [];
   item.categories.forEach(function(cat){
-    cats.push('<a href="' + config.root + cat.permalink + '">' + cat.name + '</a>');
+    cats.push('<a href="' + config.root + cat.path + '">' + cat.name + '</a>');
   });
   %>
   <div class="categories">

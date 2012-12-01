@@ -20,7 +20,7 @@
     <header>
       <% if (item.layout != 'page'){ %>
         <div class="icon"></div>
-        <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.permalink %>"><%= item.date.format(config.date_format) %></a></time>
+        <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
       <% } %>
       <% if (item.link){ %>
         <% if (item.title){ %>
@@ -30,7 +30,7 @@
         <% } %>
       <% } else { %>
         <% if (index){ %>
-          <h1 class="title"><a href="<%- config.root %><%- item.permalink %>"><%= item.title %></a></h1>
+          <h1 class="title"><a href="<%- config.root %><%- item.path %>"><%= item.title %></a></h1>
         <% } else { %>
           <h1 class="title"><%= item.title %></h1>
         <% } %>
@@ -47,12 +47,14 @@
       <% if (index){ %>
         <% if (item.excerpt){ %>
           <div class="alignleft">
-            <a href="<%- config.root %><%- item.permalink %>#more" class="more-link"><%= theme.excerpt_link %></a>
+            <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
           </div>
         <% } %>
+        <% if (item.comment && config.disqus_shortname){ %>
         <div class="alignright">
-          <a href="<%- config.url %>/<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
+          <a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
         </div>
+        <% } %>
       <% } else { %>
         <%- partial('post/category') %>
         <%- partial('post/tag') %>
