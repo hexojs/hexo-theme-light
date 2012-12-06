@@ -1,20 +1,6 @@
 <article class="<%= item.layout %>">
   <% if (item.photos){ %>
-    <div class="gallery">
-      <div class="photoset">
-        <% if (item.photos.length){ %>
-          <% item.photos.forEach(function(photo){ %>
-            <img src="<%- photo %>">
-          <% }); %>
-        <% } else { %>
-          <img src="<%- item.photos %>">
-        <% } %>
-      </div>
-      <div class="control">
-        <div class="prev"></div>
-        <div class="next"></div>
-      </div>
-    </div>
+    <%- partial('post/gallery') %>
   <% } %>
   <div class="post-content">
     <header>
@@ -22,19 +8,7 @@
         <div class="icon"></div>
         <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
       <% } %>
-      <% if (item.link){ %>
-        <% if (item.title){ %>
-          <h1 class="title"><a href="<%- item.link %>" target="_blank"><%= item.title %></a></h1>
-        <% } else { %>
-          <h1 class="title"><a href="<%- item.link %>" target="_blank"><%= item.link %></a></h1>
-        <% } %>
-      <% } else { %>
-        <% if (index){ %>
-          <h1 class="title"><a href="<%- config.root %><%- item.path %>"><%= item.title %></a></h1>
-        <% } else { %>
-          <h1 class="title"><%= item.title %></h1>
-        <% } %>
-      <% } %>
+      <%- partial('post/title') %>
     </header>
     <div class="entry">
       <% if (item.excerpt && index){ %>
@@ -65,6 +39,4 @@
   </div>
 </article>
 
-<% if (page.comments){ %>
 <%- partial('comment') %>
-<% } %>
