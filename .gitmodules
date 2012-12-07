@@ -1,0 +1,3 @@
+[submodule "themes/light"]
+	path = themes/light
+	url = https://github.com/tommy351/hexo-theme-light.git
