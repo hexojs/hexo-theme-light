@@ -1,0 +1,51 @@
+# Basic
+title: Phase
+subtitle: Feel the flow of time with Phase
+description:
+url: http://zespia.tw/hexo-theme-light
+author: SkyArrow
+email:
+language:
+
+# Permalink
+root: /hexo-theme-light/
+permalink: :year/:month/:day/:title/
+tag_dir: tags
+archive_dir: archives
+category_dir: posts
+
+# Archives
+archive: 1
+category: 1
+tag: 1
+
+# Server
+port: 4000
+logger: false
+logger_format:
+
+# Date / Time format
+date_format: MMM D, YYYY
+time_format: H:mm:ss
+
+# Pagination
+per_page: 0
+pagination_dir: page
+
+# Disqus
+disqus_shortname:
+
+# Extensions
+plugins:
+theme: light
+exclude_generator:
+
+# Enhancement
+auto_spacing: false
+titlecase: false
+
+# Deployment
+deploy:
+  type: github
+  repository: https://github.com/tommy351/hexo-theme-light.git
+  branch: gh-pages
