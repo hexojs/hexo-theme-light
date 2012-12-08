@@ -8,14 +8,14 @@ tags:
 - dolor
 ---
 
-Feel the flow of time with Phase, the most beautiful theme for [Hexo].
+Default theme for [Hexo].
 
 ## Install
 
-Execute the following command and modify `theme` in `_config.yml` to `phase`.
+Execute the following command and modify `theme` in `_config.yml` to `light`.
 
 ```
-git clone git://github.com/tommy351/hexo-theme-phase.git themes/phase
+git clone git://github.com/tommy351/hexo-theme-light.git themes/light
 ```
 
 ## Update
@@ -23,13 +23,14 @@ git clone git://github.com/tommy351/hexo-theme-phase.git themes/phase
 Execute the following command to update Light.
 
 ```
-cd themes/phase
+cd themes/light
 git pull
 ```
 
 ## Features
 
-- [Phase Beam](https://www.youtube.com/watch?v=NhCXnWeXDT0) live background.
+- Two-column design
+- Various widgets included
 - Read `alt` property of photos and add it below photos.
 - Built-in [Fancybox](http://fancyapps.com/fancybox/) enables you to show your works easily.
 - Resize HTML5 `video` and embedded video like `iframe`, `object` to page width automatically.

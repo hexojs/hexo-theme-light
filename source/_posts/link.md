@@ -1,6 +1,6 @@
 ---
 layout: link
-title: Google
+title: Link
 date: 2012-10-23 17:21:18
 comments: true
 link: http://www.google.com
