@@ -57,22 +57,23 @@
     </header>
     <div class="entry">
       
-        <p>Feel the flow of time with Phase, the most beautiful theme for <a href="http://zespia.tw/hexo">Hexo</a>.
+        <p>Default theme for <a href="http://zespia.tw/hexo">Hexo</a>.
 
 </p>
 <h2>Install</h2>
-<p>Execute the following command and modify <code>theme</code> in <code>_config.yml</code> to <code>phase</code>.
+<p>Execute the following command and modify <code>theme</code> in <code>_config.yml</code> to <code>light</code>.
 
 </p>
-<pre><code><div class="line"><span class="title">git</span> clone <span class="url">git://github.com/tommy351/hexo-theme-phase.git</span> themes/phase</div></code></pre>
+<pre><code><div class="line"><span class="title">git</span> clone <span class="url">git://github.com/tommy351/hexo-theme-light.git</span> themes/light</div></code></pre>
 <h2>Update</h2>
 <p>Execute the following command to update Light.
 
 </p>
-<pre><code><div class="line"><span class="title">cd</span> themes/phase</div><div class="line"><span class="title">git</span> pull</div></code></pre>
+<pre><code><div class="line">cd themes/<span class="shader"><span class="keyword">light</span></div><div class="line">git pull</div></code></pre>
 <h2>Features</h2>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=NhCXnWeXDT0">Phase Beam</a> live background.</li>
+<li>Two-column design</li>
+<li>Various widgets included</li>
 <li>Read <code>alt</code> property of photos and add it below photos.</li>
 <li>Built-in <a href="http://fancyapps.com/fancybox/">Fancybox</a> enables you to show your works easily.</li>
 <li>Resize HTML5 <code>video</code> and embedded video like <code>iframe</code>, <code>object</code> to page width automatically.</li>
@@ -160,7 +161,7 @@
       
       
   
-    <h1 class="title"><a href="http://www.google.com" target="_blank">Google</a></h1>
+    <h1 class="title"><a href="http://www.google.com" target="_blank">Link</a></h1>
   
 
     </header>
@@ -171,6 +172,54 @@
 </p>
 <p>Nulla est dolor, bibendum eget sagittis eget, cursus in metus. In quis tortor eu purus imperdiet faucibus. Suspendisse metus sem, porttitor tristique porta et, volutpat ut felis. Cras ut orci ac erat viverra viverra. Quisque sit amet ante nec turpis placerat sollicitudin quis ut purus. Phasellus nec velit sem. Donec at lectus nisl. Praesent molestie convallis sagittis. Sed a libero sed diam mollis congue. Nam et nisl ac elit molestie ullamcorper ut ut lacus. Sed mattis dolor et velit viverra hendrerit. Morbi accumsan augue at elit posuere luctus laoreet justo mattis.</p>
 
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2012-01-08T02:58:17.000Z"><a href="/hexo-theme-light/2012/01/08/code/">Jan 8, 2012</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/hexo-theme-light/2012/01/08/code/">Code</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>Normal code block:
+
+</p>
+<pre><code class="lang-js"><div class="line"><span class="keyword">var</span> http = require(<span class="string">'http'</span>);</div><div class="line">http.createServer(<span class="function"><span class="keyword">function</span> <span class="params">(req, res)</span> {</span></div><div class="line">  res.writeHead(<span class="number">200</span>, {<span class="string">'Content-Type'</span>: <span class="string">'text/plain'</span>});</div><div class="line">  res.end(<span class="string">'Hello World\n'</span>);</div><div class="line">}).listen(<span class="number">1337</span>, <span class="string">'127.0.0.1'</span>);</div><div class="line">console.log(<span class="string">'Server running at http://127.0.0.1:1337/'</span>);</div></code></pre>
+<p>Code block:
+
+</p>
+<figure class="highlight"><figcaption><span>Javascript Array Syntax </span><a href="http://j.mp/pPUUmW">MDN Documentation</a></figcaption><table><tr><td class="gutter"><pre><code><div class="line-number">1</div><div class="line-number">2</div></code></pre></td><td class="code"><pre><code><div class="line"><span class="keyword">var</span> arr1 = <span class="keyword">new</span> Array(arrayLength);</div><div class="line"><span class="keyword">var</span> arr2 = <span class="keyword">new</span> Array(element0, element1, ..., elementN);</div></code></pre></td></tr></table></figure>
+
+<p>Gist tag:
+
+</p>
+<script src="https://gist.github.com/996818.js"></script>
+
+<p>jsFiddle:
+
+</p>
+<iframe style="width: 100%; height: 300px;" src="http://jsfiddle.net/ccWP7/embedded/js,resources,html,css,result/light"></iframe>
       
     </div>
     <footer>
@@ -229,6 +278,54 @@
 
 
 
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2011-03-18T02:56:36.000Z"><a href="/hexo-theme-light/2011/03/18/faq/">Mar 18, 2011</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/hexo-theme-light/2011/03/18/faq/">FAQ</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h3>How to edit menu?</h3>
+<p>Edit <code>menu</code> parameter in <code>_config.yml</code>.
+
+</p>
+<h3>How to edit sidebar?</h3>
+<p>Edit <code>widgets</code> paramter in <code>_config.yml</code>.
+
+</p>
+<h3>How to enable Twitter widget?</h3>
+<p>First, confirm that <code>twitter</code> is included in <code>widgets</code> parameter in <code>_config.yml</code>. Then, fill <code>twitter.username</code> with your twitter username.
+
+</p>
+<h3>How to disable Fancybox?</h3>
+<p>Edit <code>fancybox</code> parameter to <code>false</code> in <code>_config.yml</code>.
+
+</p>
+<p>If you have any questions, send me an <a href="https://github.com/tommy351/hexo-theme-light/issues">issue</a>.</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
 
 <nav id="pagination">
   
@@ -254,7 +351,7 @@
   
     <li><a href="/hexo-theme-light/tags/consectetur/">consectetur</a><small>3</small></li>
   
-    <li><a href="/hexo-theme-light/tags/dolor/">dolor</a><small>2</small></li>
+    <li><a href="/hexo-theme-light/tags/dolor/">dolor</a><small>4</small></li>
   
   </ul>
 </div>
@@ -294,5 +391,7 @@ var twitter_stream = ['tommy351', 5, false];
 })(jQuery);
 </script>
 
+
+<a href="https://github.com/tommy351/hexo-theme-light" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
 </body>
 </html>

@@ -3,22 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Intro | Light</title>
+  <title>Code | Light</title>
   <meta name="author" content="SkyArrow">
   
-  <meta name="description" content="Default theme for Hexo.
+  <meta name="description" content="Normal code block:
 
 
-Install
-Execute the following command and modify theme in _config.yml to light.
-
-
-git clone git://github.com/tommy351/hexo-t">
+var http = require('http');http.createServer(function (req, res) {  res.writeHead(200, {'Content-Type': 'text/plain'});  res.end(">
   
   
   <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
     
-  <meta property="og:title" content="Intro"/>
+  <meta property="og:title" content="Code"/>
   <meta property="og:site_name" content="Light"/>
 
   <link rel="alternate" href="/hexo-theme-light/atom.xml" title="Light" type="application/atom+xml">
@@ -55,38 +51,34 @@ git clone git://github.com/tommy351/hexo-t">
     <header>
       
         <div class="icon"></div>
-        <time datetime="2012-12-29T09:36:05.000Z"><a href="/hexo-theme-light/2012/12/29/intro/">Dec 29, 2012</a></time>
+        <time datetime="2012-01-08T02:58:17.000Z"><a href="/hexo-theme-light/2012/01/08/code/">Jan 8, 2012</a></time>
       
       
   
-    <h1 class="title">Intro</h1>
+    <h1 class="title">Code</h1>
   
 
     </header>
     <div class="entry">
       
-        <p>Default theme for <a href="http://zespia.tw/hexo">Hexo</a>.
+        <p>Normal code block:
 
 </p>
-<h2>Install</h2>
-<p>Execute the following command and modify <code>theme</code> in <code>_config.yml</code> to <code>light</code>.
+<pre><code class="lang-js"><div class="line"><span class="keyword">var</span> http = require(<span class="string">'http'</span>);</div><div class="line">http.createServer(<span class="function"><span class="keyword">function</span> <span class="params">(req, res)</span> {</span></div><div class="line">  res.writeHead(<span class="number">200</span>, {<span class="string">'Content-Type'</span>: <span class="string">'text/plain'</span>});</div><div class="line">  res.end(<span class="string">'Hello World\n'</span>);</div><div class="line">}).listen(<span class="number">1337</span>, <span class="string">'127.0.0.1'</span>);</div><div class="line">console.log(<span class="string">'Server running at http://127.0.0.1:1337/'</span>);</div></code></pre>
+<p>Code block:
 
 </p>
-<pre><code><div class="line"><span class="title">git</span> clone <span class="url">git://github.com/tommy351/hexo-theme-light.git</span> themes/light</div></code></pre>
-<h2>Update</h2>
-<p>Execute the following command to update Light.
+<figure class="highlight"><figcaption><span>Javascript Array Syntax </span><a href="http://j.mp/pPUUmW">MDN Documentation</a></figcaption><table><tr><td class="gutter"><pre><code><div class="line-number">1</div><div class="line-number">2</div></code></pre></td><td class="code"><pre><code><div class="line"><span class="keyword">var</span> arr1 = <span class="keyword">new</span> Array(arrayLength);</div><div class="line"><span class="keyword">var</span> arr2 = <span class="keyword">new</span> Array(element0, element1, ..., elementN);</div></code></pre></td></tr></table></figure>
+
+<p>Gist tag:
 
 </p>
-<pre><code><div class="line">cd themes/<span class="shader"><span class="keyword">light</span></div><div class="line">git pull</div></code></pre>
-<h2>Features</h2>
-<ul>
-<li>Two-column design</li>
-<li>Various widgets included</li>
-<li>Read <code>alt</code> property of photos and add it below photos.</li>
-<li>Built-in <a href="http://fancyapps.com/fancybox/">Fancybox</a> enables you to show your works easily.</li>
-<li>Resize HTML5 <code>video</code> and embedded video like <code>iframe</code>, <code>object</code> to page width automatically.</li>
-</ul>
+<script src="https://gist.github.com/996818.js"></script>
 
+<p>jsFiddle:
+
+</p>
+<iframe style="width: 100%; height: 300px;" src="http://jsfiddle.net/ccWP7/embedded/js,resources,html,css,result/light"></iframe>
       
     </div>
     <footer>
@@ -95,7 +87,7 @@ git clone git://github.com/tommy351/hexo-t">
         
   
   <div class="tags">
-    <a href="/hexo-theme-light/tags/consectetur/">consectetur</a>, <a href="/hexo-theme-light/tags/dolor/">dolor</a>
+    <a href="/hexo-theme-light/tags/dolor/">dolor</a>
   </div>
 
         
