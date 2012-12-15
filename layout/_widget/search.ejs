@@ -1,6 +1,6 @@
 <div class="search">
   <form action="http://google.com/search" method="get" accept-charset="utf-8">
-    <input type="text" name="q" results="0" placeholder="Search">
+    <input type="text" name="q" results="0" placeholder="<%= __('search') %>">
     <input type="hidden" name="q" value="site:<%- config.url.replace(/^https?:\/\//, '') %>">
   </form>
 </div>
