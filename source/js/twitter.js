@@ -1,5 +1,5 @@
 (function($){
-  $.getScript('/js/moment.min.js', function(){
+  $.getScript(moment_js_path, function(){
     var url = 'https://api.twitter.com/1/statuses/user_timeline/' + twitter_stream[0] + '.json?count=' + twitter_stream[1] + '&exclude_replies=' + (twitter_stream[2] ? 0 : 1) + '&trim_user=true&callback=?';
 
     var linkify = function(text){
