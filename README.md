@@ -28,7 +28,7 @@ menu:
   Home: /
   Archives: /archives
 
-widgets: 
+widgets:
 - search
 - category
 - tag
@@ -77,7 +77,7 @@ rss:
 
 ### Gallery Post
 
-![](http://i.minus.com/i7hBbGqh14EWo.png)
+![](http://i.minus.com/ibp6Hbytwgof9y.jpg)
 
 ```
 ---
@@ -91,7 +91,7 @@ photos:
 
 ### Link Post
 
-![](http://i.minus.com/ibp6Hbytwgof9y.jpg)
+![](http://i.minus.com/i7hBbGqh14EWo.png)
 
 ```
 ---
