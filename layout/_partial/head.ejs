@@ -31,6 +31,12 @@
   <% if (page.title){ %><meta property="og:title" content="<%= page.title %>"/><% } %>
   <meta property="og:site_name" content="<%= config.title %>"/>
 
+  <% if(page.cover) { %>
+    <meta property="og:image" content="<%= page.cover %>" />
+  <% } else { %>
+    <meta property="og:image" content="<%= config.cover %>"/>
+  <% } %>
+
   <link href="<%- config.root %>favicon.png" rel="icon">
   <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
   <link rel="stylesheet" href="<%- config.root %>css/style.css" media="screen" type="text/css">
