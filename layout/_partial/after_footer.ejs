@@ -1,5 +1,17 @@
 <script src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
 <script src="<%- config.root %>js/gallery.js"></script>
+<script type="text/javascript">
+	(function($){
+		$(function(){
+			$('a[href^="http"]').each(function(){
+				var $a = $(this);
+				if(! $a.hasClass('fancybox')){
+			    	$a.attr('target', '_blank').addClass('external');
+				}
+			});
+		})
+	})(jQuery);
+</script>
 
 <% if (config.disqus_shortname){ %>
 <script type="text/javascript">
