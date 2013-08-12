@@ -1,6 +1,10 @@
-# Light
+# Twitter Bootstrap
 
-Default theme for [Hexo].
+> ### READ THIS!!
+> I've forked `hexo-theme-light`, with the intension of creating a theme that supports [a Twitter Bootstap setup](http://getbootstrap.com/2.3.2/examples/fluid.html). I have not actually done any work on it yet. I will remove this message once I've completed it and verified it.
+>
+> I have also not updated any of the text blow this message yet.
+
 
 ## Install
 
