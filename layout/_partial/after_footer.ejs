@@ -4,7 +4,6 @@
 <% if (config.disqus_shortname){ %>
 <script type="text/javascript">
 var disqus_shortname = '<%= config.disqus_shortname %>';
-
 (function(){
   var dsq = document.createElement('script');
   dsq.type = 'text/javascript';
@@ -14,7 +13,6 @@ var disqus_shortname = '<%= config.disqus_shortname %>';
 }());
 </script>
 <% } %>
-
 <% if (theme.fancybox){ %>
 <link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
 <script src="<%- config.root %>fancybox/jquery.fancybox.pack.js"></script>

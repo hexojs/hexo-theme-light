@@ -1,8 +1,11 @@
-<div class="alignleft">
-  <% if (config.author){ %>
-  &copy; <%= new Date().getFullYear() %> <%= config.author %>
-  <% } else { %>
-  &copy; <%= new Date().getFullYear() %> <%= config.title %>
-  <% } %>
+<div id="footer">
+  <div class="container">
+    <p class="text-muted credit">
+      <% if (config.author){ %>
+      &copy; <%= new Date().getFullYear() %> <%= config.author %>
+      <% } else { %>
+      &copy; <%= new Date().getFullYear() %> <%= config.title %>
+      <% } %>
+    </p>
+  </div>
 </div>
-<div class="clearfix"></div>
