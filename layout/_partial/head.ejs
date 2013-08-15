@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -25,8 +25,12 @@
   <% } else if (page.content){ %>
   <meta name="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
   <% } %>
-  <% if (page.keywords){ %><meta name="keywords" content="<%= page.keywords %>"><% } %>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <% if (page.keywords){ %>
+  <meta name="keywords" content="<%= page.keywords %>">
+  <% } else if (config.keywords) { %>
+  <meta name="keywords" content="<%= page.config %>">
+  <% } %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <% if (page.title){ %><meta property="og:title" content="<%= page.title %>"/><% } %>
   <meta property="og:site_name" content="<%= config.title %>"/>
@@ -38,9 +42,26 @@
   <% } %>
 
   <link href="<%- config.root %>favicon.png" rel="icon">
+
   <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
-  <link rel="stylesheet" href="<%- config.root %>css/style.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-  <%- partial('google_analytics') %>
+
+  <style>
+    #wrap > .container {
+      /* should equal navbar height */
+      padding-top: 50px;
+    }
+  <% if (theme.footer_color){ %>
+    #footer {
+      background-color: <%-theme.footer_color%>;
+    }
+  <% } %>
+  </style>
+  <% if (theme.bootstrap_css) { %>
+  <link rel="stylesheet" href="<%-theme.bootstrap_css%>">
+  <% } else { %>
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  <% } %>
+  <% if (theme.sticky_footer) { %>
+  <link rel="stylesheet" href="<%-config.root%>css/sticky_footer.css">
+  <% } %>
 </head>

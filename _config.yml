@@ -1,29 +1,72 @@
-menu:
-  Home: /
-  Archives: /archives
+keywords: site, wide, default, keywords
 
-widgets: 
+# path to bootstrap css template if not specified,
+# uses full bootstrap-combined.min.css
+#
+# These free themes are provided by my firends at http://bootstrapcdn.com
+#
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/amelia/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/cerulean/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/cosmo/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/cyborg/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/flatly/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/journal/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/readable/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/simplex/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/slate/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/spacelab/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/spruce/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/superhero/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/united/bootstrap.min.css
+
+# inverse bootstrap navbar
+#bs_nav_inverse: true
+
+# This section turns on javascript components,
+# they're off by default to make things faster.
+bootstrap_js: true
+imagesloaded_js: true # gives images a loading icon
+fancybox: true
+
+sticky_footer: true
+
+# don't use this without sticky_footer
+#footer_color: 'black'
+
+menu:
+  Archives: /archives
+  Projects: /projects
+  About: /about
+
+widgets:
 - search
 - category
 - tag
 - twitter
 
-excerpt_link: Read More
+excerpt_link: read more
 
-twitter:
-  username:
-  show_replies: false
-  tweet_count: 5
+# not currently working
+#twitter:
+  #username: mervinej
+  #show_replies: true
+  #tweet_count: 5
+
+# or
+twitter_id: mervinej
+
+facebook_id: mervinej
+linkedin_id: mervinej
+github_id: jmervine
 
 addthis:
   enable: true
-  pubid:
-  facebook: true
+  pubid: ra-520c00d223718563
   twitter: true
-  google: true
-  pinterest: true
-
-fancybox: true
+  facebook: true
 
 google_analytics:
 rss:
+
+disqus_shortname: rubyops
+
