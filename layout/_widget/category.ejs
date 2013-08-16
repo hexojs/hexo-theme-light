@@ -1,12 +1,10 @@
 <% if (site.categories.length){ %>
-<div class="container">
 <h3><%- __('categories') %></h3>
-<% site.categories.sort('name').each(function(item){ %>
 <div class="row">
-    <div class="col-1 col-sm-1 col-lg-1">&#8250;</div>
-    <div class="col-8 col-sm-8 col-lg-8"><a href="<%- config.root %><%- item.path %>"><%- item.name %></a></div>
-    <div class="col-2 col-sm-2 col-lg-2"><%- item.posts.length %></div>
-</div>
+  <ul class="list-group" style="list-style-type: none;box-sizing: border-box;">
+<% site.categories.sort('name').each(function(item){ %>
+    <li class="list-group-item"><span class="badge" style="float: right; margin-right: -15px"><%- item.posts.length %></span><a href="<%- config.root %><%- item.path %>"><%- item.name %></a></li>
 <% }); %>
+  </ul>
 </div>
 <% } %>

@@ -1,6 +1,13 @@
-<script src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
-<script src="<%- config.root %>js/gallery.js"></script>
-
+<script src="//code.jquery.com/jquery.js"></script>
+<% if (theme.bootstrap_js) { %>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<% } %>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+<script src="<%- config.root %>js/respond.min.js"></script>
+<%- partial('google_analytics') %>
+<% if (theme.imagesloaded_js) { %>
+<script src="//cdn.jsdelivr.net/imagesloaded/3.0.4/imagesloaded.pkgd.js"></script>
+<% } %>
 <% if (config.disqus_shortname){ %>
 <script type="text/javascript">
 var disqus_shortname = '<%= config.disqus_shortname %>';

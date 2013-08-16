@@ -1,9 +1,14 @@
-<nav id="pagination">
+<% if (page.prev || page.next) { %>
+<ul class="pager">
   <% if (page.prev){ %>
-    <a href="<%- config.root %><%- page.prev_link %>" class="alignleft prev"><%= __('prev') %></a>
+    <li class="previous"><a href="<%- config.root %><%- page.prev_link %>" class="alignleft prev"><%= __('prev') %></a></li>
+  <% } else { %>
+    <li class="previous disabled"><a href="<%- config.root %><%- page.prev_link %>" class="alignleft prev"><%= __('prev') %></a></li>
   <% } %>
   <% if (page.next){ %>
-    <a href="<%- config.root %><%- page.next_link %>" class="alignright next"><%= __('next') %></a>
+    <li class="next"><a href="<%- config.root %><%- page.next_link %>" class="alignright next"><%= __('next') %></a></li>
+  <% } else { %>
+    <li class="next disabled"><a href="<%- config.root %><%- page.next_link %>" class="alignright next"><%= __('next') %></a></li>
   <% } %>
-  <div class="clearfix"></div>
-</nav>
+</ul>
+<% } %>

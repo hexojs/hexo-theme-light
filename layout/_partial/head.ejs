@@ -42,17 +42,26 @@
   <% } %>
 
   <link href="<%- config.root %>favicon.png" rel="icon">
+
   <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
+
+  <style>
+    #wrap > .container {
+      /* should equal navbar height */
+      padding-top: 50px;
+    }
+  <% if (theme.footer_color){ %>
+    #footer {
+      background-color: <%-theme.footer_color%>;
+    }
+  <% } %>
+  </style>
   <% if (theme.bootstrap_css) { %>
   <link rel="stylesheet" href="<%-theme.bootstrap_css%>">
   <% } else { %>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css">
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
   <% } %>
-  <script src="//code.jquery.com/jquery.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
-  <script src="<%- config.root %>js/respond.min.js"></script>
-  <%- partial('google_analytics') %>
-  <style>
-    body { padding-top: 50px; };
-  </style>
+  <% if (theme.sticky_footer) { %>
+  <link rel="stylesheet" href="<%-config.root%>css/sticky_footer.css">
+  <% } %>
 </head>

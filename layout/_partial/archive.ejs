@@ -7,34 +7,28 @@ if (page.archive){
   else title = __('archive_a');
 }
 %>
-<div class="container">
-  <div class="page-header">
-    <h1><%- title %></h1>
-  </div>
-
+<div class="row-fluid">
+  <h1><%- title %></h1>
 <% if (pagination == 2){ %>
   <% page.posts.each(function(item){ %>
     <%- partial('article', {item: item, index: true}) %>
   <% }); %>
-
   <%- partial('pagination') %>
 <% } else { %>
-  <div class="row">
-    <% page.each(function(item){ %>
-      <div class="col-11 col-sm-11 col-lg-11">
-        <div class="icon"></div>
-        <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
-        <% if (item.link){ %>
-          <% if (item.title){ %>
-            <h1 class="title link"><a href="<%- item.link %>" target="_blank"><%= item.title %></a></h1>
-          <% } else { %>
-            <h1 class="title link"><a href="<%- item.link %>" target="_blank"><%= item.link %></a></h1>
-          <% } %>
-        <% } else { %>
-          <h1 class="title"><a href="<%- config.root %><%- item.path %>"><%= item.title %></a></h1>
-        <% } %>
-      </div>
-    <% }); %>
-  </div>
+  <p>
+  <% page.each(function(item){ %>
+    <div class="icon"></div>
+    <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
+    <% if (item.link){ %>
+      <% if (item.title){ %>
+        <h1 class="title link"><a href="<%- item.link %>" target="_blank"><%= item.title %></a></h1>
+      <% } else { %>
+        <h1 class="title link"><a href="<%- item.link %>" target="_blank"><%= item.link %></a></h1>
+      <% } %>
+    <% } else { %>
+      <h1 class="title"><a href="<%- config.root %><%- item.path %>"><%= item.title %></a></h1>
+    <% } %>
+  <% }); %>
+  </p>
 <% } %>
 </div>

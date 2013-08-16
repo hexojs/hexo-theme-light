@@ -1,43 +1,32 @@
-<div class="container">
-  <div class="row">
-    <div class="col-12 col-sm-12 col-lg-12">
-    <% if (item.photos){ %>
-      <%- partial('post/gallery') %>
-    <% } %>
-    <% if (item.layout != 'page'){ %>
-      <div class="page-header">
-      <div class="icon"></div>
-      <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
-      <%- partial('post/title') %>
-      </div>
-    <% } %>
-    <p>
-    <% if (item.excerpt && index){ %>
-      <%- item.excerpt %>
-    <% } else { %>
-      <%- item.content %>
-    <% } %>
-    </p>
-    <% if (index){ %>
-      <div class="container">
-        <div class="row">
-      <% if (item.excerpt){ %>
-        <div class="col-12 col-sm-12 col-lg-6">
-          <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
-        </div>
-      <% } %>
-      <% if (item.comment && config.disqus_shortname){ %>
-        <div class="col-12 col-sm-12 col-lg-6">
-          <a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
-        </div>
-      <% } %>
-      </div>
+<% if (item.layout != 'page'){ %>
+  <div class="page-header">
+  <div class="icon"></div>
+  <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
+  <%- partial('post/title') %>
+  </div>
+<% } %>
+<p>
+<% if (item.excerpt && index){ %>
+  <%- item.excerpt %>
+<% } else { %>
+  <%- item.content %>
+<% } %>
+</p>
+<% if (index){ %>
+    <div class="row-fluid">
+  <% if (item.excerpt){ %>
+    <div class="span3">
+      <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
     </div>
-    <% } else { %>
-      <%- partial('post/category') %>
-      <%- partial('post/tag') %>
-    <% } %>
-    <%- partial('comment') %>
+  <% } %>
+  <% if (item.comment && config.disqus_shortname){ %>
+    <div class="span3">
+      <a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
+    </div>
+  <% } %>
   </div>
-  </div>
-</div>
+<% } else { %>
+  <%- partial('post/category') %>
+  <%- partial('post/tag') %>
+<% } %>
+<%- partial('comment') %>
