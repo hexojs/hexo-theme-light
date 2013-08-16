@@ -6,7 +6,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="brand" href="<%- config.root %>"><%- config.title %></a>
+      <% if (theme.gravatar) { %>
+      <span class="brand">
+        <a class="brand" href="<%- config.root %>"><img id="gravatar_nav" src="http://www.gravatar.com/avatar/<%-theme.gravatar%>.jpg?s=50"/><%- config.title %></a>
+      </span>
+      <% } else { %>
+        <a class="brand" href="<%- config.root %>"><%- config.title %></a>
+      <% } %>
+
       <div class="nav-collapse collapse navbar-responsive-collapse">
         <ul class="nav">
         <% for (var i in theme.menu){ %>

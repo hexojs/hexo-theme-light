@@ -29,10 +29,19 @@
 #imagesloaded_js: true # gives images a loading icon
 #fancybox: true
 
+# stick footer to page bottom
 sticky_footer: true
 
 # don't use this without sticky_footer
 #footer_color: 'black'
+
+# Include gravatar to left of page title in navbar.
+# It will overflow navbar a bit intentionally.
+#
+# NOTE: this should be considered experimental
+gravatar:
+  # e.g.
+  #gravatar: ed808193b8c2c8516715816f90a005b2 # that's me
 
 menu:
   Home: /

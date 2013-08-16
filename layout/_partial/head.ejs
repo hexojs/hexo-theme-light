@@ -63,5 +63,25 @@
   <% } %>
   <% if (theme.sticky_footer) { %>
   <link rel="stylesheet" href="<%-config.root%>css/sticky_footer.css">
-  <% } %>
+<% } %>
+
+<% if (theme.gravatar) { %>
+    <style>
+      #gravatar_nav {
+        margin-top: 10px;
+        margin-bottom: -17px;
+        margin-right: 10px;
+        background: red;
+        padding: 0;
+         -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -khtml-border-radius: 8px;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .navbar .brand {
+        padding: 0px 20px 0px;
+      }
+    </style>
+<% }%>
 </head>
