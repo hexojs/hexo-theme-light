@@ -1,25 +1,36 @@
-# Twitter Bootstrap
+# Hexo: Twitter Bootstrap Theme
 
-> ### READ THIS!!
-> I've forked `hexo-theme-light`, with the intension of creating a theme that supports [a Twitter Bootstap setup](http://getbootstrap.com/2.3.2/examples/fluid.html). I have not actually done any work on it yet. I will remove this message once I've completed it and verified it.
+> ### What is Twitter Bootstap
 >
-> I have also not updated any of the text blow this message yet.
+> Sleek, intuitive, and powerful front-end framework for faster and easier web development.
+>
+> See: [Twitter Bootstap](http://getbootstrap.com/2.3.2/examples/fluid.html)
+>
+>
+> ### What is Hexo
+>
+> A fast, simple & powerful blog framework, powered by Node.js.
+>
+> See: [Hexo][Hexo]
 
+## Note
+
+I would consider this beta. I've tested most elements my liking, but only on Chrome for Linux. It needs further testing before I'll call it done.
 
 ## Install
 
-Execute the following command and modify `theme` in `_config.yml` to `light`.
+Execute the following command and modify `theme` in `_config.yml` to `twbootstrap`.
 
 ```
-git clone git://github.com/tommy351/hexo-theme-light.git themes/light
+git clone git://github.com/tommy351/hexo-theme-twbootstrap.git themes/twbootstrap
 ```
 
 ## Update
 
-Execute the following command to update Light.
+Execute the following command to update:
 
 ```
-cd themes/light
+cd themes/twbootstrap
 git pull
 ```
 
@@ -28,6 +39,42 @@ git pull
 Default config:
 
 ``` yaml
+# Site default meta keywords
+#keywords: site, wide, default, keywords
+
+# path to bootstrap css template if not specified,
+# uses full bootstrap-combined.min.css
+#
+# These free themes are provided by my firends at http://bootstrapcdn.com
+#
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/amelia/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/cerulean/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/cosmo/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/cyborg/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/flatly/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/journal/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/readable/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/simplex/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/slate/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/spacelab/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/spruce/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/superhero/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/united/bootstrap.min.css
+
+# inverse bootstrap navbar
+#bs_nav_inverse: true
+
+# This section turns on javascript components,
+# they're off by default to make things faster.
+#bootstrap_js: true
+#imagesloaded_js: true # gives images a loading icon
+#fancybox: true
+
+sticky_footer: true
+
+# don't use this without sticky_footer
+#footer_color: 'black'
+
 menu:
   Home: /
   Archives: /archives
@@ -36,66 +83,30 @@ widgets:
 - search
 - category
 - tag
-- twitter
 
-excerpt_link: Read More
+excerpt_link: read more
 
-twitter:
-  username:
-  show_replies: false
-  tweet_count: 5
+twitter_id:
+facebook_id:
+linkedin_id:
+github_id:
 
 addthis:
   enable: true
   pubid:
-  facebook: true
   twitter: true
-  google: true
-  pinterest: true
-
-fancybox: true
+  facebook: true
 
 google_analytics:
 rss:
-```
 
-- **menu** - Main navigation menu
-- **widget** - Widgets displaying in sidebar
-- **excerpt_link** - "Read More" link text at the bottom of excerpted articles
-- **twitter** - Twitter widget config
-  - **username** - Twitter username
-  - **show_replies** - Enable displaying replies
-  - **tweet_count** - Tweets display in widget
-- **addthis** - Share buttons at the buttom of articles (Powered by [AddThis])
-  - **enable** - Enable share buttons
-  - **pubid** - Profile ID of [AddThis]
-  - **facebook** - Enable Facebook button
-  - **twitter** - Enable Twitter button
-  - **google** - Enable Google+ button
-  - **pinterest** - Enable Pinterest button
-- **fancybox** - Enable [Fancybox]
-- **google_analytics** - Google Analytics ID
-- **rss** - RSS subscription link (change if using Feedburner)
+disqus_shortname:
+
+```
 
 ## Features
 
-### Gallery Post
-
-![](http://i.minus.com/ibp6Hbytwgof9y.jpg)
-
-```
----
-layout: photo
-title: Gallery Post
-photos:
-- http://i.minus.com/ibobbTlfxZgITW.jpg
-- http://i.minus.com/iedpg90Y0exFS.jpg
----
-```
-
 ### Link Post
-
-![](http://i.minus.com/i7hBbGqh14EWo.png)
 
 ```
 ---
@@ -105,14 +116,9 @@ link: http://www.google.com/
 ---
 ```
 
-### Tweet Widget
-
-![](http://i.minus.com/iMC8EyF9y0Y3y.PNG)
-
 ### Fancybox
 
-![](http://i.minus.com/iHv7h7rZNqHvo.PNG)
+See: [Fancybox][Fancybox]
 
 [Hexo]: http://zespia.tw/hexo/
-[AddThis]: https://www.addthis.com
 [Fancybox]: http://fancyapps.com/fancybox/
