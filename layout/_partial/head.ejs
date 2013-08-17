@@ -50,6 +50,21 @@
       /* should equal navbar height */
       padding-top: 50px;
     }
+  <% if (theme.widgets.indexOf('category') !== -1 ||
+      theme.widgets.indexOf('tag') !== -1) { %>
+    .list-group {
+      list-style-type: none;
+      padding-left: 10px;
+      /* box-sizing: border-box; */
+    }
+    .list-group-item a {
+      text-transform: capitalize;
+    }
+    .badge {
+      float: right;
+      margin-right: -15px;
+    }
+  <% } %>
   <% if (theme.footer_color){ %>
     #footer {
       background-color: <%-theme.footer_color%>;

@@ -1,9 +1,11 @@
 <% if (site.tags.length){ %>
-<div class="widget tag">
-  <h3 class="title"><%= __('tags') %></h3>
-  <ul class="entry">
+<h3 class="title"><%= __('tags') %></h3>
+<div class="row">
+  <ul class="list-group">
   <% site.tags.sort('name').each(function(item){ %>
-    <li><a href="<%- config.root %><%- item.path %>"><%= item.name %></a><small><%= item.posts.length %></small></li>
+    <% if (item.posts.length > 1) { %>
+    <li class="list-group-itme"><span class="badge"><%= item.posts.length %></span><a href="<%- config.root %><%- item.path %>"><%= item.name %></a></li>
+    <% } %>
   <% }); %>
   </ul>
 </div>
