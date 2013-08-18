@@ -3,9 +3,7 @@
 <div class="row">
   <ul class="list-group">
   <% site.tags.sort('name').each(function(item){ %>
-    <% if (item.posts.length > 1) { %>
     <a style="font-size: <%-((item.posts.length*6)+100)%>%" href="<%- config.root %><%- item.path %>"><%- item.name %></a>
-    <% } %>
   <% }); %>
   </ul>
 </div>
