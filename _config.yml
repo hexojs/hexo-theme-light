@@ -20,6 +20,44 @@
 #bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/superhero/bootstrap.min.css
 #bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/united/bootstrap.min.css
 
+# highlight.js is the code highlighter in this theme
+# choose a highlight.js theme here or delete all to disable
+# - for demos see: http://softwaremaniacs.org/media/soft/highlight/test.html
+#
+# highlightjs: github # << default
+# highlightjs: arta
+# highlightjs: ascetic
+# highlightjs: brown_paper
+# highlightjs: dark
+# highlightjs: default
+# highlightjs: docco
+# highlightjs: far
+# highlightjs: foundation
+# highlightjs: googlecode
+# highlightjs: idea
+# highlightjs: ir_black
+# highlightjs: magula
+# highlightjs: mono-blue
+# highlightjs: monokai
+# highlightjs: monokai_sublime
+# highlightjs: obsidian
+# highlightjs: pojoaque
+# highlightjs: railscasts
+# highlightjs: rainbow
+# highlightjs: school_book
+# highlightjs: school_book.png
+# highlightjs: solarized_dark
+# highlightjs: solarized_light
+# highlightjs: sunburst
+# highlightjs: tomorrow
+# highlightjs: tomorrow-night-blue
+# highlightjs: tomorrow-night-bright
+# highlightjs: tomorrow-night
+# highlightjs: tomorrow-night-eighties
+# highlightjs: vs
+# highlightjs: xcode
+# highlightjs: zenburn
+
 # inverse bootstrap navbar
 #bs_nav_inverse: true
 
@@ -45,12 +83,18 @@ gravatar:
 
 menu:
   Home: /
+  About: /about
   Archives: /archives
 
 widgets:
 - search
 - category
-- tag
+- tagcloud
+# - tag
+
+# For use with tagcloud or tag widgets
+# - only tags >= to tag_minium are shown
+tag_minium: 3
 
 excerpt_link: read more
 

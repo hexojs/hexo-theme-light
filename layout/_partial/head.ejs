@@ -50,6 +50,9 @@
       /* should equal navbar height */
       padding-top: 50px;
     }
+    figure.highlight table tbody tr td.code {
+      width: 100%
+    }
   <% if (theme.widgets.indexOf('category') !== -1 ||
       theme.widgets.indexOf('tag') !== -1) { %>
     .list-group {
@@ -78,6 +81,11 @@
   <% } %>
   <% if (theme.sticky_footer) { %>
   <link rel="stylesheet" href="<%-config.root%>css/sticky_footer.css">
+<% } %>
+<% if (theme.highlightjs) { %>
+  <link rel="stylesheet" href="<%-config.root%>css/highlightjs/<%-theme.highlighjs%>.css">
+<% } else { %>
+  <link rel="stylesheet" href="<%-config.root%>css/highlightjs/github.css">
 <% } %>
 
 <% if (theme.gravatar) { %>
