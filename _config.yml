@@ -6,19 +6,17 @@
 #
 # These free themes are provided by my firends at http://bootstrapcdn.com
 #
-#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/amelia/bootstrap.min.css
-#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/cerulean/bootstrap.min.css
-#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/cosmo/bootstrap.min.css
-#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/cyborg/bootstrap.min.css
-#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/flatly/bootstrap.min.css
-#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/journal/bootstrap.min.css
-#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/readable/bootstrap.min.css
-#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/simplex/bootstrap.min.css
-#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/slate/bootstrap.min.css
-#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/spacelab/bootstrap.min.css
-#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/spruce/bootstrap.min.css
-#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/superhero/bootstrap.min.css
-#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/2.3.2/united/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/3.0.0/amelia/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/3.0.0/cerulean/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/3.0.0/cosmo/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/3.0.0/cyborg/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/3.0.0/flatly/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/3.0.0/journal/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/3.0.0/readable/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/3.0.0/simplex/bootstrap.min.css
+bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/3.0.0/slate/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/3.0.0/spacelab/bootstrap.min.css
+#bootstrap_css: //netdna.bootstrapcdn.com/bootswatch/3.0.0/united/bootstrap.min.css
 
 # highlight.js is the code highlighter in this theme
 # choose a highlight.js theme here or delete all to disable
@@ -90,7 +88,8 @@ widgets:
 - search
 - category
 - tagcloud
-# - tag
+#- recent_posts
+#- tag
 
 # For use with tagcloud or tag widgets
 # - only tags >= to tag_minium are shown

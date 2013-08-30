@@ -45,11 +45,7 @@
 
   <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
 
-  <style>
-    #wrap > .container {
-      /* should equal navbar height */
-      padding-top: 50px;
-    }
+  <!--style>
     figure.highlight table tbody tr td.code {
       width: 100%
     }
@@ -73,14 +69,14 @@
       background-color: <%-theme.footer_color%>;
     }
   <% } %>
-  </style>
+  </style-->
   <% if (theme.bootstrap_css) { %>
   <link rel="stylesheet" href="<%-theme.bootstrap_css%>">
   <% } else { %>
-  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
   <% } %>
   <% if (theme.sticky_footer) { %>
-  <link rel="stylesheet" href="<%-config.root%>css/sticky_footer.css">
+  <!--link rel="stylesheet" href="<%-config.root%>css/sticky_footer.css"-->
 <% } %>
 <% if (theme.highlightjs) { %>
   <link rel="stylesheet" href="<%-config.root%>css/highlightjs/<%-theme.highlighjs%>.css">

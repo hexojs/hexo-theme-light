@@ -1,42 +1,42 @@
-<div class="navbar <% if (theme.bs_nav_inverse) { %>navbar-inverse <%}%>navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<div class="navbar navbar-fixed-top <% if (theme.bs_nav_inverse) { %>navbar-inverse <%}%>" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
       <% if (theme.gravatar) { %>
       <span class="brand">
-        <a class="brand" href="<%- config.root %>"><img id="gravatar_nav" src="http://www.gravatar.com/avatar/<%-theme.gravatar%>.jpg?s=50"/><%- config.title %></a>
+        <a class="navbar-brand" href="<%- config.root %>"><img id="gravatar_nav" src="http://www.gravatar.com/avatar/<%-theme.gravatar%>.jpg?s=50"/><%- config.title %></a>
       </span>
       <% } else { %>
-        <a class="brand" href="<%- config.root %>"><%- config.title %></a>
+      <a class="navbar-brand" href="<%- config.root %>"><%- config.title %></a>
       <% } %>
-
-      <div class="nav-collapse collapse navbar-responsive-collapse">
-        <ul class="nav">
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
         <% for (var i in theme.menu){ %>
           <li><a href="<%- theme.menu[i] %>"><%- i %></a></li>
         <% } %>
-        </ul>
-        <ul class="nav pull-right">
-        <% if (theme.twitter && theme.twitter.username) { %>
-          <li><a href="https://twitter.com/<%- theme.twitter.username %>">twitter</a></li>
-        <% } else if (theme.twitter_id) { %>
-          <li><a href="https://twitter.com/<%- theme.twitter_id %>">twitter</a></li>
-        <% } %>
-        <% if (theme.facebook_id) { %>
-          <li><a href="https://www.facebook.com/<%- theme.facebook_id %>">facebook</a></li>
-        <% } %>
-        <% if (theme.linked_id) { %>
-          <li><a href="http://www.linkedin.com/in/<%- theme.linkedin_id %>">linkedin</a></li>
-        <% } %>
-        <% if (theme.github_id) { %>
-          <li><a href="https://github.com/jmervine<%- theme.twitter_id %>">github</a></li>
-        <% } %>
-        </ul>
-      </div><!--/.nav-collapse -->
+      </ul>
+      <ul class="nav navbar-nav pull-right">
+      <% if (theme.twitter && theme.twitter.username) { %>
+        <li><a href="https://twitter.com/<%- theme.twitter.username %>">twitter</a></li>
+      <% } else if (theme.twitter_id) { %>
+        <li><a href="https://twitter.com/<%- theme.twitter_id %>">twitter</a></li>
+      <% } %>
+      <% if (theme.facebook_id) { %>
+        <li><a href="https://www.facebook.com/<%- theme.facebook_id %>">facebook</a></li>
+      <% } %>
+      <% if (theme.linked_id) { %>
+        <li><a href="http://www.linkedin.com/in/<%- theme.linkedin_id %>">linkedin</a></li>
+      <% } %>
+      <% if (theme.github_id) { %>
+        <li><a href="https://github.com/jmervine<%- theme.twitter_id %>">github</a></li>
+      <% } %>
+      </ul>
     </div>
   </div>
 </div>
+

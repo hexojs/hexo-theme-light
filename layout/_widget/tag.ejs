@@ -1,12 +1,13 @@
 <% if (site.tags.length){ %>
-<h3 class="title"><%= __('tags') %></h3>
-<div class="row">
-  <ul class="list-group">
-  <% site.tags.sort('name').each(function(item){ %>
-    <% if (item.posts.length >= theme.tag_minium) { %>
-    <li class="list-group-itme"><span class="badge"><%= item.posts.length %></span><a href="<%- config.root %><%- item.path %>"><%= item.name %></a></li>
-    <% } %>
-  <% }); %>
-  </ul>
-</div>
+<h3><%= __('tags') %></h3>
+<ul class="list-group">
+<% site.tags.sort('name').each(function(item){ %>
+  <% if (item.posts.length >= theme.tag_minium) { %>
+  <li class="list-group-item">
+    <span class="badge"><%= item.posts.length %></span>
+    <a href="<%- config.root %><%- item.path %>"><%= item.name %></a>
+  </li>
+  <% } %>
+<% }); %>
+</ul>
 <% } %>

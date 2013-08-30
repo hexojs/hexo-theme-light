@@ -1,6 +1,9 @@
-<div class="search">
-  <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input id="searchbox" type="search" name="q" results="0" placeholder="<%= __('search') %>">
+<form action="//google.com/search" method="get" accept-charset="utf-8">
+  <div class="input-group">
+    <input class="form-control" id="searchbox" type="search" name="q" results="0" placeholder="<%= __('search') %>">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="submit">Go!</button>
+    </span>
     <input type="hidden" name="q" value="site:<%- config.url.replace(/^https?:\/\//, '') %>">
-  </form>
-</div>
+  </div>
+</form>

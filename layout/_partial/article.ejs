@@ -13,14 +13,14 @@
 <% } %>
 </p>
 <% if (index){ %>
-    <div class="row-fluid">
+    <div class="row">
   <% if (item.excerpt){ %>
-    <div class="span3">
+    <div class="col-3 col-md-3">
       <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
     </div>
   <% } %>
   <% if (item.comment && config.disqus_shortname){ %>
-    <div class="span3">
+    <div class="col-3 col-md-3">
       <a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
     </div>
   <% } %>
