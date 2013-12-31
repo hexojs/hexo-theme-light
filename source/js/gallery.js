@@ -2,7 +2,7 @@
   // Caption
   $('.entry').each(function(i){
     $(this).find('img').each(function(){
-      if (!this.find('nofancybox')){
+      if (!$(this).hasClass('nofancybox')){
         var alt = this.alt;
 
         if (alt){
