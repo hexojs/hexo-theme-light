@@ -1,5 +1,5 @@
 <article class="<%= item.layout %>">
-  <% if (item.photos){ %>
+  <% if (item.photos && item.photos.length){ %>
     <%- partial('post/gallery') %>
   <% } %>
   <div class="post-content">
