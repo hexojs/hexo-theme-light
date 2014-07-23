@@ -7,7 +7,7 @@ Default theme for [Hexo].
 Execute the following command and modify `theme` in `_config.yml` to `light`.
 
 ```
-git clone git://github.com/tommy351/hexo-theme-light.git themes/light
+git clone https://github.com/hexojs/hexo-theme-light.git themes/light
 ```
 
 ## Update
