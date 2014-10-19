@@ -2,10 +2,10 @@
   <div class="photoset">
     <% if (item.photos.length){ %>
       <% item.photos.forEach(function(photo){ %>
-        <img src="<%- photo %>">
+        <img src="<%- photo %>" alt>
       <% }); %>
     <% } else { %>
-      <img src="<%- item.photos %>">
+      <img src="<%- item.photos %>" alt>
     <% } %>
   </div>
   <div class="control">
