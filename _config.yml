@@ -6,6 +6,8 @@ widgets:
 - search
 - category
 - tag
+- recent_posts
+- tagcloud
 
 excerpt_link: Read More
 
@@ -15,7 +17,7 @@ twitter:
   tweet_count: 5
 
 addthis:
-  enable: true
+  enable: false
   pubid:
   facebook: true
   twitter: true
@@ -26,8 +28,9 @@ fancybox: true
 
 google_analytics:
 rss:
+duoshuo_shortname: jackroyal
 
-comment_provider: facebook
+comment_provider:
 # Facebook comment
 facebook:
   appid: 123456789012345
