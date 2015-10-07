@@ -89,7 +89,6 @@ facebook:
 
 ### Gallery Post
 
-![](http://i4.minus.com/ibp6Hbytwgof9y.jpg)
 
 ```
 ---
@@ -103,8 +102,6 @@ photos:
 
 ### Link Post
 
-![](http://i3.minus.com/i7hBbGqh14EWo.png)
-
 ```
 ---
 layout: link
@@ -115,11 +112,9 @@ link: http://www.google.com/
 
 ### Tweet Widget
 
-![](http://i1.minus.com/iMC8EyF9y0Y3y.PNG)
 
 ### Fancybox
 
-![](http://i4.minus.com/iHv7h7rZNqHvo.PNG)
 
 [Hexo]: http://hexo.io
 [AddThis]: https://www.addthis.com
