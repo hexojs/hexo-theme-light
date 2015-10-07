@@ -27,10 +27,10 @@ fancybox: true
 google_analytics:
 rss:
 
-# Facebook comment
-#comment_provider: facebook
+# Uncomment the line below to enable facebook commenting 
+# comment_provider: facebook
 facebook:
-  appid: 1627819517467507
+  appid: #012345012345 override with your AppId
   comment_count: 5
   comment_width: 840
   comment_colorscheme: light
