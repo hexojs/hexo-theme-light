@@ -5,7 +5,7 @@
 <nav id="main-nav" class="alignright">
   <ul>
     <% for (var i in theme.menu){ %>
-      <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
+      <li><a href="<%- config.root %><%- theme.menu[i] %>"><%= i %></a></li>
     <% } %>
   </ul>
   <div class="clearfix"></div>
