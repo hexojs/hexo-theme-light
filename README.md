@@ -53,6 +53,13 @@ fancybox: true
 
 google_analytics:
 rss:
+
+comment_provider: facebook
+facebook:
+  appid: 012345012345
+  comment_count: 5
+  comment_width: 840
+  comment_colorscheme: light
 ```
 
 - **menu** - Main navigation menu
@@ -72,12 +79,16 @@ rss:
 - **fancybox** - Enable [Fancybox]
 - **google_analytics** - Google Analytics ID
 - **rss** - RSS subscription link (change if using Feedburner)
-
+- **comment_provider** - "facebook" (to enable Facebook comments)
+  - **appid** - Facebook AppId (from developer tools)
+  - **comment_count** - Number of commends to show
+  - **comment_width** - Width of comment box in pixels
+  - **comment_colorscheme** - Color scheme
+ 
 ## Features
 
 ### Gallery Post
 
-![](http://i.minus.com/ibp6Hbytwgof9y.jpg)
 
 ```
 ---
@@ -91,8 +102,6 @@ photos:
 
 ### Link Post
 
-![](http://i.minus.com/i7hBbGqh14EWo.png)
-
 ```
 ---
 layout: link
@@ -103,12 +112,10 @@ link: http://www.google.com/
 
 ### Tweet Widget
 
-![](http://i.minus.com/iMC8EyF9y0Y3y.PNG)
 
 ### Fancybox
 
-![](http://i.minus.com/iHv7h7rZNqHvo.PNG)
 
-[Hexo]: http://zespia.tw/hexo/
+[Hexo]: http://hexo.io
 [AddThis]: https://www.addthis.com
 [Fancybox]: http://fancyapps.com/fancybox/
