@@ -7,7 +7,7 @@ A simple theme for [Hexo].
 Execute the following command and modify `theme` in `_config.yml` to `light`.
 
 ```
-git clone https://github.com/hexojs/hexo-theme-light.git themes/light
+git clone --depth 1 https://github.com/hexojs/hexo-theme-light themes/light
 ```
 
 ``` diff
