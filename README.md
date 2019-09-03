@@ -83,21 +83,22 @@ rss:
 
 ### Gallery Post
 
-![](http://i.minus.com/ibp6Hbytwgof9y.jpg)
+![Gallery Post](https://raw.githubusercontent.com/hexojs/hexo-theme-light/site/source/screenshots/gallery-post.gif)
 
 ```
 ---
 layout: photo
 title: Gallery Post
 photos:
-- http://i.minus.com/ibobbTlfxZgITW.jpg
-- http://i.minus.com/iedpg90Y0exFS.jpg
+- https://i.postimg.cc/c49xRqRP/1.jpg
+- https://i.postimg.cc/288jLjZ4/2.jpg
+- https://i.postimg.cc/T2cYP5pd/3.jpg
 ---
 ```
 
 ### Link Post
 
-![](http://i.minus.com/i7hBbGqh14EWo.png)
+![Link Post](https://raw.githubusercontent.com/hexojs/hexo-theme-light/site/source/screenshots/link-post.gif)
 
 ```
 ---
@@ -109,11 +110,11 @@ link: http://www.google.com/
 
 ### Tweet Widget
 
-![](http://i.minus.com/iMC8EyF9y0Y3y.PNG)
+![Tweet Widget](https://raw.githubusercontent.com/hexojs/hexo-theme-light/site/source/screenshots/tweet-widget.gif)
 
 ### Fancybox
 
-![](http://i.minus.com/iHv7h7rZNqHvo.PNG)
+![Fancybox](https://raw.githubusercontent.com/hexojs/hexo-theme-light/site/source/screenshots/fancybox.gif)
 
 [Hexo]: http://zespia.tw/hexo/
 [AddThis]: https://www.addthis.com
