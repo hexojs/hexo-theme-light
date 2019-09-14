@@ -3,7 +3,7 @@
 <%- js('js/gallery.js') %>
 
 <% if (config.disqus_shortname){ %>
-<script type="text/javascript">
+<script>
 var disqus_shortname = '<%= config.disqus_shortname %>';
 
 (function(){
@@ -19,7 +19,7 @@ var disqus_shortname = '<%= config.disqus_shortname %>';
 <% if (theme.fancybox){ %>
 <%- css('fancybox/jquery.fancybox.css') %>
 <%- js('fancybox/jquery.fancybox.pack.js') %>
-<script type="text/javascript">
+<script>
 (function($){
   $('.fancybox').fancybox();
 })(jQuery);
