@@ -1,6 +1,6 @@
 <%- js('js/jquery-3.4.1.min.js') %>
-<script src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
-<script src="<%- config.root %>js/gallery.js"></script>
+<%- js('js/jquery.imagesloaded.min.js') %>
+<%- js('js/gallery.js') %>
 
 <% if (config.disqus_shortname){ %>
 <script type="text/javascript">
@@ -17,8 +17,8 @@ var disqus_shortname = '<%= config.disqus_shortname %>';
 <% } %>
 
 <% if (theme.fancybox){ %>
-<link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="<%- config.root %>fancybox/jquery.fancybox.pack.js"></script>
+<%- css('fancybox/jquery.fancybox.css') %>
+<%- js('fancybox/jquery.fancybox.pack.js') %>
 <script type="text/javascript">
 (function($){
   $('.fancybox').fancybox();
