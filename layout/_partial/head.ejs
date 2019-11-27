@@ -36,7 +36,19 @@
   <% } %>
 
   <link href="<%- config.root %>favicon.png" rel="icon">
-  <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
+  <% if (config.feed) { %>
+    <% if (config.feed.type.length && config.feed.path.length) { %>
+      <% if (typeof config.feed.type === 'string' )) { %>
+        <link rel="alternate" type="application/<%- config.feed.type.replace(/2$/, '') %>+xml" title="<%= config.title %>" href="<%- url_for(config.feed.path) %>">
+      <% } else { %>
+        <% for (const i in config.feed.type) { %>
+          <link rel="alternate" type="application/<%- config.feed.type[i].replace(/2$/, '') %>+xml" title="<%= config.title %>" href="<%- url_for(config.feed.path[i]) %>">
+        <% } %>
+      <% } %>
+    <% } %>
+  <% } else if (theme.rss) { %>
+    <link rel="alternate" href="<%- url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
+  <% } %>
   <link rel="stylesheet" href="<%- config.root %>css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <%- partial('google_analytics') %>
