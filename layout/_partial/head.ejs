@@ -23,7 +23,6 @@
   <% } else if (page.content){ %>
   <meta name="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
   <% } %>
-  <% if (page.keywords){ %><meta name="keywords" content="<%= page.keywords %>"><% } %>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <% if (page.title){ %><meta property="og:title" content="<%= page.title %>"/><% } %>
