@@ -36,7 +36,11 @@
   <% } %>
 
   <%- favicon_tag('favicon.png') %>
-  <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- url_for('atom.xml') %><% } %>" title="<%= config.title %>" type="application/atom+xml">
+  <% if (config.feed) { %>
+    <%- feed_tag() %>
+  <% } else if (theme.rss) { %>
+    <%- feed_tag(theme.rss) %>
+  <% } %>
   <%- css('css/style.css') %>
   <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
   <%- partial('google_analytics') %>
