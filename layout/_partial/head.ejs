@@ -35,8 +35,8 @@
     <meta property="og:image" content="<%= config.cover %>"/>
   <% } %>
 
-  <link href="<%- config.root %>favicon.png" rel="icon">
-  <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
+  <%- favicon_tag('favicon.png') %>
+  <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- url_for('atom.xml') %><% } %>" title="<%= config.title %>" type="application/atom+xml">
   <%- css('css/style.css') %>
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <%- partial('google_analytics') %>

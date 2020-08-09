@@ -6,7 +6,7 @@
     <header>
       <% if (item.layout != 'page'){ %>
         <div class="icon"></div>
-        <time class="dt-published" datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
+        <time class="dt-published" datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- url_for(item.path) %>"><%= item.date.format(config.date_format) %></a></time>
       <% } %>
       <%- partial('post/title') %>
     </header>
@@ -21,7 +21,7 @@
       <% if (index){ %>
         <% if (item.excerpt){ %>
           <div class="alignleft">
-            <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
+            <a href="<%- url_for(item.path) %>#more" class="more-link"><%= theme.excerpt_link %></a>
           </div>
         <% } %>
         <% if (item.comment && config.disqus_shortname){ %>
