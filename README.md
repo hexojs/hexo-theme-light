@@ -68,7 +68,7 @@ rss:
   - **username** - Twitter username
   - **show_replies** - Enable displaying replies
   - **tweet_count** - Tweets display in widget
-- **addthis** - Share buttons at the buttom of articles (Powered by [AddThis])
+- **addthis** - Share buttons at the bottom of articles (Powered by [AddThis])
   - **enable** - Enable share buttons
   - **pubid** - Profile ID of [AddThis]
   - **facebook** - Enable Facebook button
