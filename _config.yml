@@ -14,14 +14,6 @@ twitter:
   show_replies: false
   tweet_count: 5
 
-addthis:
-  enable: true
-  pubid:
-  facebook: true
-  twitter: true
-  google: true
-  pinterest: true
-
 fancybox: true
 
 google_analytics:
