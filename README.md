@@ -47,14 +47,6 @@ twitter:
   show_replies: false
   tweet_count: 5
 
-addthis:
-  enable: true
-  pubid:
-  facebook: true
-  twitter: true
-  google: true
-  pinterest: true
-
 fancybox: true
 
 google_analytics:
@@ -68,13 +60,6 @@ rss:
   - **username** - Twitter username
   - **show_replies** - Enable displaying replies
   - **tweet_count** - Tweets display in widget
-- **addthis** - Share buttons at the bottom of articles (Powered by [AddThis])
-  - **enable** - Enable share buttons
-  - **pubid** - Profile ID of [AddThis]
-  - **facebook** - Enable Facebook button
-  - **twitter** - Enable Twitter button
-  - **google** - Enable Google+ button
-  - **pinterest** - Enable Pinterest button
 - **fancybox** - Enable [Fancybox]
 - **google_analytics** - Google Analytics ID
 - **rss** - RSS subscription link (change if using Feedburner)
@@ -117,5 +102,4 @@ link: http://www.google.com/
 ![Fancybox](https://raw.githubusercontent.com/hexojs/hexo-theme-light/site/source/screenshots/fancybox.gif)
 
 [Hexo]: http://zespia.tw/hexo/
-[AddThis]: https://www.addthis.com
 [Fancybox]: http://fancyapps.com/fancybox/
