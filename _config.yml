@@ -9,6 +9,9 @@ widgets:
 
 excerpt_link: Read More
 
+#If `footer` not enquals `false`,the theme will use this option to override footer
+footer: false
+
 twitter:
   username:
   show_replies: false
@@ -26,3 +29,17 @@ facebook:
   comment_count: 5
   comment_width: 840
   comment_colorscheme: light
+# Giscus comment
+giscus:
+  data_repo: example
+  data_repo_id: example
+  data_category: example
+  data_category_id: example
+  data_mapping: pathname
+  data_strict: 0
+  data_reactions_enabled: 1
+  data_emit_metadata: 0
+  data_input_position: bottom
+  data_loding: normal
+  data_theme: preferred_color_scheme
+  crossorigin: anonymous
