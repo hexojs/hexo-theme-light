@@ -1,6 +1,6 @@
 menu:
   Home:
-  Archives: archives
+  About: 2024/04/about
 
 widgets:
 - search
@@ -10,6 +10,9 @@ widgets:
 
 excerpt_link: Read More
 
+#If `footer` not enquals `false`,the theme will use this option to override footer
+footer: 以 CC-BY-NC-4.0 许可 保留所有权利 | Copyright © 2024-PRESENT Leafx
+
 twitter:
   username:
   show_replies: false
@@ -18,12 +21,27 @@ twitter:
 fancybox: true
 
 google_analytics:
+msclarity_analytics: lqsblbva9f
 rss:
 
-comment_provider: facebook
+comment_provider: giscus
 # Facebook comment
 facebook:
   appid: 123456789012345
   comment_count: 5
   comment_width: 840
   comment_colorscheme: light
+# Giscus comment
+giscus:
+  data_repo: Leafx-code/Leafx-code.github.io
+  data_repo_id: R_kgDOLXpW5A
+  data_category: Comments
+  data_category_id: DIC_kwDOLXpW5M4Cdf5g
+  data_mapping: pathname
+  data_strict: 0
+  data_reactions_enabled: 1
+  data_emit_metadata: 0
+  data_input_position: bottom
+  data_loding: normal
+  data_theme: preferred_color_scheme
+  crossorigin: anonymous
