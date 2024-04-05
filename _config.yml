@@ -6,6 +6,7 @@ widgets:
 - search
 - category
 - tag
+- archive
 
 excerpt_link: Read More
 
