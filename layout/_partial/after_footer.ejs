@@ -2,9 +2,9 @@
 <%- js('js/jquery.imagesloaded.min.js') %>
 <%- js('js/gallery.js') %>
 
-<% if (config.disqus_shortname){ %>
+<% if (theme.disqus_shortname){ %>
 <script>
-var disqus_shortname = '<%= config.disqus_shortname %>';
+var disqus_shortname = '<%= theme.disqus_shortname %>';
 
 (function(){
   var dsq = document.createElement('script');
