@@ -21,9 +21,11 @@ google_analytics:
 rss:
 
 comment_provider: facebook
+# Disqus comment
+disqus_shortname:
 # Facebook comment
 facebook:
-  appid: 123456789012345
+  appid: # <appId>
   comment_count: 5
   comment_width: 840
   comment_colorscheme: light
